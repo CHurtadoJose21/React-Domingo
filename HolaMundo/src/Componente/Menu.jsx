@@ -1,0 +1,26 @@
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../img/logo-react.png';
+
+function Menu() {
+  return (
+    <>
+      <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Mi Web con React JS
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
+
+export default Menu;
